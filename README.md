@@ -1,5 +1,3 @@
-# KREATOR
-
 ## HOW TO USE
 python + file + 4chan URL
 
