@@ -8,6 +8,7 @@ siteURL = sys.argv[1]
 siteHTML = requests.get(siteURL)
 siteSoup = BeautifulSoup(siteHTML.content, 'html.parser')
 photos = siteSoup.find_all('a', 'fileThumb')
+
 try:
     title = siteSoup.find('span', 'subject').text
 
