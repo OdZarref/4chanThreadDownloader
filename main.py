@@ -11,6 +11,7 @@ photos = siteSoup.find_all('a', 'fileThumb')
 
 try:
     title = siteSoup.find('span', 'subject').text
+    title.replace('/', '-')
 
     for photo in photos:
         photoURL = 'https:' + photo.attrs['href']
